@@ -1,0 +1,15 @@
+head
+ meta name="author" content="Anthony Jurado"
+ script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"
+ link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'
+ link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+body
+ div.margem
+	 div.fluid_container.one
+	  div.container
+	   .jumbotron3
+	    h1 
+	     = link_to "Projetos",  projetos_path
+	   .jumbotron2  
+	    h1 
+	              = link_to "log out",   destroy_user_session_path, method: :delete

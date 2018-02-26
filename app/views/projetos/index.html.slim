@@ -1,0 +1,30 @@
+.jumbotron3
+  h1 Projetos
+
+  table
+    thead
+      tr
+        th Nome
+        th Data
+        th Pessoas
+        th
+        th
+        th
+
+    tbody
+      - @projetos.each do |projeto|
+        tr
+          td = projeto.nome
+          td = projeto.data
+          td = projeto.pessoas
+          td = projeto.bug
+          td = link_to 'Show', projeto
+          td = link_to 'Edit', edit_projeto_path(projeto)
+          td = link_to 'Destroy', projeto, data: { confirm: 'Are you sure?' }, method: :delete
+
+  br
+
+  = link_to 'New Projeto', new_projeto_path
+
+  h5
+   = link_to "log out",   destroy_user_session_path, method: :delete

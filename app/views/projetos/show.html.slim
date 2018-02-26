@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Nome:
+  = @projeto.nome
+p
+  strong Data:
+  = @projeto.data
+p
+  strong Pessoas:
+  = @projeto.pessoas
+p
+  strong Bug:
+  = @projeto.bug
+
+=> link_to 'Edit', edit_projeto_path(@projeto)
+'|
+=< link_to 'Back', projetos_path
